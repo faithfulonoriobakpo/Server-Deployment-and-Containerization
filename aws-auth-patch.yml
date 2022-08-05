@@ -13,6 +13,13 @@ data:
       - system:masters
       rolearn: arn:aws:iam::457161558726:role/UdacityFlaskDeployCBKubectlRole
       username: build
+  mapUsers: |
+    - userarn: arn:aws:iam::457161558726:user/faithfulomoy
+      username: faithfulomoy
+      groups:
+      - system:masters
+  mapAccounts: |
+    - "457161558726"
 kind: ConfigMap
 metadata:
   creationTimestamp: "2022-05-11T11:16:26Z"
