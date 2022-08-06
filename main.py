@@ -86,7 +86,7 @@ def auth():
 @APP.route('/contents', methods=['GET'])
 def decode_jwt():
     """
-    Check user token and return non-secret data
+    Checks user token and return non-secret data
     """
     if not 'Authorization' in request.headers:
         abort(401)
